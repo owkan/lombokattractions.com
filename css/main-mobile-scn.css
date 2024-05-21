@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+  .scn {
+    width: 96%;
+    padding: 0 2% 0 2%;
+  }
+
+  .scn.scn-1 {
+    height: 150px;
+    background-image: url(../assets/sq6.jpg);
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 150px 2% 0 2%;
+    border-image: fill 0 linear-gradient(to top, #f2f2f2 5%, rgba(254, 254, 254, 0) 30%);
+  }
+
+  .search-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scn.scn-2 {
+    width: 96%;
+    background: none;
+    margin-top: 10px;
+  }
+  .scn.scn-3 {
+    width: 96%;
+    margin-top: 50px;
+  }
+}
