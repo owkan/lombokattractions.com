@@ -60,7 +60,8 @@
   }
 
   .nav-menu {
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: space-around;
     font-weight: 250;
   }
