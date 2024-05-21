@@ -56,12 +56,12 @@
 
   /* => Nav Bar */
   nav {
+    display: none;
     padding: 0 0 10px 0;
   }
 
   .nav-menu {
-    display: none;
-    /* display: flex; */
+    display: flex;
     justify-content: space-around;
     font-weight: 250;
   }
