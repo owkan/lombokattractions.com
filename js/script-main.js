@@ -87,3 +87,12 @@ document.addEventListener('DOMContentLoaded', function () {
     moveToPreviousCard();
   });
 });
+
+// Footer-------------------------------
+// -------------------------------------
+const curentYearCopyright = () => {
+  let yearElement = document.getElementById('copyRight-year');
+  let curentYear = new Date().getFullYear();
+  yearElement.textContent = curentYear;
+};
+curentYearCopyright();
