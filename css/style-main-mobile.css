@@ -184,13 +184,14 @@
     margin-bottom: 20px;
     font-size: 0.8em;
   }
-  .span1 {
-    margin-bottom: 20px;
-    font-size: 0.8em;
-  }
 
   .p2 {
     margin-bottom: 10px;
+    font-size: 0.8em;
+  }
+
+  .span1 {
+    margin-bottom: 20px;
     font-size: 0.8em;
   }
 
@@ -486,6 +487,42 @@
 
   .card-c-inf .span1 i {
     color: var(--third);
+  }
+
+  /* Bottom navigation */
+  .nav-bootom {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding: 0 2% 0 2%;
+    gap: 10px;
+    background-color: var(--primary);
+  }
+
+  .nav-box {
+    width: 48%;
+    padding-top: 10px;
+  }
+
+  .nav-tite {
+    border-bottom: solid var(--bg) 1px;
+  }
+  .nav-tite h4.h4 {
+    color: var(--bg);
+    font-weight: 300;
+  }
+
+  .nav-bootom-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+
+  .nav-bootom-item li a {
+    font-size: var(--paragraph1-mbl);
+    color: var(--bg);
+    font-weight: 250;
   }
 
   /* Footer */
