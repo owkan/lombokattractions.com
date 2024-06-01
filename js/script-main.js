@@ -88,6 +88,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Float Button - cart------------------
+// -------------------------------------
+
+// const floatButton = document.querySelector('.float-btn.cart-btn');
+// const cartList = document.querySelector('.list-cart');
+
+// floatButton.addEventListener('click', (e) => {
+//   cartList.classList.add('list-cart-active');
+//   floatButton.style.right = '120px';
+
+//   if (e.target == floatButton.classList.contains('cart-btn')) {
+//     cartList.classList.remove('list-cart-active');
+//   } else if (!e.target == floatButton.classList.contains('cart-btn')) {
+//   }
+// });
+
 // Footer-------------------------------
 // -------------------------------------
 const curentYearCopyright = () => {

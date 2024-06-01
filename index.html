@@ -47,7 +47,10 @@
     <div class="user-controls">
         <div class="user">
             <i class="fa-solid fa-x close-user-control"></i>
+
+            <i class="fa-regular fa-pen-to-square"></i>
             <span class="user-name">Okan</span>
+
             <div class="profile">
                 <!-- <i class="fa-solid fa-user"></i> -->
                 <img src="assets/okan.jpg" alt="okan">
@@ -56,27 +59,42 @@
 
         
         <div class="toolbar">
-            <details>
-                <summary><i class="fa-solid fa-language"></i> Language</summary>
-                <ul>
-                    <li class="curency-list" id="rp">English</li>
-                    <li class="curency-list" id="usd">Indonesia</li>
-                </ul>
-            </details>
-            <details>
-                <summary><i class="fa-solid fa-rupiah-sign"></i> IDR</summary>
-                <ul>
-                    <li class="curency-list" id="rp"><i class="fa-solid fa-rupiah-sign"></i> IDR</li>
-                    <li class="curency-list" id="usd"><i class="fa-solid fa-dollar-sign"></i> USD</li>
-                    <li class="curency-list" id="ue"><i class="fa-solid fa-euro-sign"></i> EURO</li>
-                </ul>
-            </details>  
+            <span class="lang"><i class="fa-solid fa-language"></i> Language</span>
+            <ul class="lang-list">
+                <li id="eng"><a href="#">English</a></li>
+                <li id="idn"><a href="#">Indonesia</a></li>
+            </ul>
+
+
+            <span class="curency"><i class="fa-solid fa-rupiah-sign"></i> IDR</span>
+            <ul class="curency-list">
+                <li id="rp"><a href=""><i class="fa-solid fa-rupiah-sign"></i> IDR</a></li>
+                <li id="usd"><a href=""><i class="fa-solid fa-dollar-sign"></i> USD</a></li>
+                <li id="ue"><a href=""><i class="fa-solid fa-euro-sign"></i> EURO</a></li>
+            </ul>
+
+            <span class="curency"><i class="fa-solid fa-question"></i>Help Center</span>
+            <ul class="curency-list">
+                <li><a href="">Listing</a></li>
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Joint</a></li>
+            </ul>
+
+            <span class="curency"><i class="fa-solid fa-headset"></i>Customer Service</span>
+            <ul class="curency-list">
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Invoice</a></li>
+                <li><a href="">Payout</a></li>
+                <li><a href="">Listing</a></li>
+                <li><a href="">Contract</a></li>
+                <li><a href="">Other contact</a></li>
+            </ul>
         </div>        
     </div>
 
 <!-- ------------- Section 1 Hero ------------- -->
     <section class="scn scn-1">
-        <h1 class="h1">LETS FIND THE ATTRACTIONS IN LOMBOK</h1>
+        <h1 class="h1">LET'S FIND THE LOMBOK ATTRACTIONS</h1>
         
         <form action="search" class="search-form">
             <input type="text" placeholder="Search" class="seaarch-field">
@@ -467,6 +485,14 @@
         </div>
     </section>
 
+<!-- ------------- Float btn & List - Cart ------------- -->
+    <span class="float-btn cart-btn" id="cart-btn">
+        <i class="fa-solid fa-list-check"></i>
+    </span>
+    
+    <div class="list-cart">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente suscipit dolores ipsa corrupti blanditiis sed a, quibusdam nemo minus, non consequuntur laborum expedita placeat alias voluptas! Velit, enim aliquid?
+    </div>
 <!-- ------------- Footer ------------- -->
     <div class="footer">
         <p>Copyright © 2023-<span id="copyRight-year"></span><br />Lombok Attractions. All rights reserved.</p>

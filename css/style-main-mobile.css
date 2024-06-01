@@ -83,7 +83,6 @@
     z-index: 2;
     width: 200px;
     height: 100vh;
-    filter: drop-shadow(#2d2d2d 0 0 3px);
     transition: all 0.2s ease-in-out;
   }
 
@@ -116,8 +115,13 @@
     background-color: var(--primary);
   }
 
+  .user i {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    margin-right: 2px;
+  }
+
   .user-name {
-    width: 60%;
     text-align: end;
   }
 
@@ -148,17 +152,36 @@
     margin-top: 10px;
     margin-left: 10px;
     gap: 10px;
+    overflow: auto;
   }
 
-  .toolbar details:nth-child(1) ul,
-  .toolbar details:nth-child(2) ul {
+  .toolbar span {
+    display: block;
+    border-bottom: solid var(--text) 1px;
+  }
+
+  .toolbar span i {
+    color: var(--primary);
+    width: 25px;
+    margin: 5px 0;
+  }
+
+  .lang-list,
+  .curency-list {
+    color: var(--bg);
+    display: block;
     list-style: none;
-    margin-bottom: 10px;
+    font-size: 0.8em;
+    margin-bottom: 5px;
   }
 
-  .toolbar details:nth-child(1) ul li,
-  .toolbar details:nth-child(2) ul li {
-    margin-left: 20px;
+  .lang-list li,
+  .curency-list li {
+    margin: 8px 0 8px 30px;
+  }
+  .lang-list li a,
+  .curency-list li a {
+    color: var(--text);
   }
 
   /* Heading & Paragraph */
@@ -268,8 +291,9 @@
     background: none;
   }
 
-  /* Search form */
+  /* Hero & Search form */
   /* ---------------------------------- */
+
   .search-form {
     width: 100%;
     display: flex;
@@ -525,7 +549,48 @@
     font-weight: 250;
   }
 
+  /* Cart list */
+  /* ---------------------------------- */
+  .float-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    font-size: 1.2em;
+    filter: drop-shadow(rgba(0, 0, 0, 0.303) 2px 2px 3px);
+  }
+
+  .float-btn.cart-btn {
+    background: var(--primary);
+    color: var(--third);
+    right: 15px;
+    bottom: 50px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .list-cart {
+    display: none;
+    position: fixed;
+    right: -60%;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: var(--bg);
+    z-index: 1;
+    border-left: solid var(--primary) 1px;
+    padding-left: 5px;
+    transition: 0.2s ease-in-out;
+  }
+  .list-cart-active {
+    display: block;
+    right: 0%;
+  }
+
   /* Footer */
+  /* ---------------------------------- */
   .footer {
     width: 96%;
     padding: 10px 2% 10px 2%;
